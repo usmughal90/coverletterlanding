@@ -9,7 +9,6 @@ export default function Footer() {
         Copyrights © 2024 - 2026{" "}
         <a
           href={`${process.env.NEXT_PUBLIC_API_DOMAIN ? process.env.NEXT_PUBLIC_API_DOMAIN : "/"}`}
-          target="_blank"
           className="text-white hover:text-white/80 underline"
         >
           Cover Letter AI & Resume Maker
