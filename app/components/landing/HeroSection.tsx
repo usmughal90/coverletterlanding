@@ -18,7 +18,7 @@ export default function HeroSection({ title, subtitle }: HeroSectionProps) {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/bg.png"
+          src="/images/bg.jpg"
           alt="Background"
           fill
           priority
