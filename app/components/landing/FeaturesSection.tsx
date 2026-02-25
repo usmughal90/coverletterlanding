@@ -11,8 +11,7 @@ export default function FeaturesSection({ title, subtitle }: FeaturesSectionProp
     <section id="features" className="bg-[#F9FAFB] min-h-screen">
       <div className="mx-auto max-w-6xl px-6 py-16 sm:py-18">
         <SectionHeading
-          title={title || "Professional Resume Builder"}
-          subtitle={subtitle || " Build modern , structured resumes with step by step guidance in minutes."}
+          title={title || "App Features"}
           className="text-[#0F172A] "
         />
 
