@@ -5,10 +5,8 @@ import Link from "next/link";
 
 const DownloadButton = ({ className = "" }) => {
   // Replace YOUR_APP_ID with your actual app IDs
-  const androidStore =
-    "https://play.google.com/store/apps/details?id=codematics.universal.tv.remote.control";
   const iosStore =
-    "https://apps.apple.com/sa/app/universal-tv-remote-control/id1492122256";
+    "https://apps.apple.com/us/app/cover-letter-ai-resume-maker/id6738951176";
 
   const [storeUrl, setStoreUrl] = useState(androidStore);
 
@@ -22,27 +20,7 @@ const DownloadButton = ({ className = "" }) => {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-
-    const ua = navigator.userAgent || navigator.vendor || window.opera;
-
-    // iOS detection
-    if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
-      setStoreUrl(iosStore);
-    }
-    // Android detection
-    else if (/android/i.test(ua)) {
-      setStoreUrl(androidStore);
-    }
-    // Desktop (Mac Safari / Chrome / Windows etc.)
-    else {
-      // Optional: choose what desktop should open
-      // If you prefer iOS for Mac Safari:
-      if (/Macintosh/.test(ua)) {
-        setStoreUrl(iosStore);
-      } else {
-        setStoreUrl(androidStore);
-      }
-    }
+    setStoreUrl(iosStore);
   }, []);
 
   return (
