@@ -137,7 +137,7 @@ export default function Header({ navItems }: HeaderProps) {
                 key={item.href}
                 href={item.href}
                 className={`relative pb-2 transition-colors ${
-                  isActive ? "text-[#0F172A]" : "hover:text-[#0F172A]"
+                  isActive ? "text-white" : "hover:text-white"
                 }`}
                 onClick={() => setActiveId(sectionId)}
               >
