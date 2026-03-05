@@ -8,7 +8,7 @@ const DownloadButton = ({ className = "" }) => {
   const iosStore =
     "https://apps.apple.com/us/app/cover-letter-ai-resume-maker/id6738951176";
 
-  const [storeUrl, setStoreUrl] = useState(androidStore);
+  const [storeUrl, setStoreUrl] = useState(iosStore);
 
   // useEffect(() => {
   //   if (typeof window === "undefined") return;
