@@ -11,7 +11,6 @@ export function getBrandBySlug(slug: string): BrandData | undefined {
     const slide = slides.find(s => {
         const slideSlug = s.alt.toLowerCase().replace(/ /g, "-");
         return slideSlug === normalizedSlug;
-
     });
 
     if (slide) {
