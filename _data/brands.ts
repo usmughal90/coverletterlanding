@@ -11,6 +11,7 @@ export function getBrandBySlug(slug: string): BrandData | undefined {
     const slide = slides.find(s => {
         const slideSlug = s.alt.toLowerCase().replace(/ /g, "-");
         return slideSlug === normalizedSlug;
+
     });
 
     if (slide) {
@@ -18,6 +19,7 @@ export function getBrandBySlug(slug: string): BrandData | undefined {
             slug: normalizedSlug,
             name: slide.alt, // e.g. "Samsung TV"
             image: slide.src
+            
         };
     }
 

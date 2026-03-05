@@ -6,6 +6,7 @@ const navItems = [
  { label: "App Screens", href: "#tv-brands" },
  { label: "Blogs", href: "#blog" },
  { label: "Faq", href: "#faq" },
+ 
 ];
 
 
